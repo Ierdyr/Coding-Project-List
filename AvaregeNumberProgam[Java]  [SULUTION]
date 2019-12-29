@@ -1,0 +1,43 @@
+
+/*
+*** Made by Ierdyr
+*** Please don't take credit for this.
+*** GitHub: https://github.com/Ierdyr/Coding-Project-List
+***
+*** ---------------------------------------
+*/
+
+
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+
+
+public class AvaregeNumberSulution
+{
+  public static void main(String[] args)
+  {
+
+    ArrayList<Integer> list = new ArrayList<Integer>( Arrays.asList(1,1,2) );
+    double Avarege = getAvarege(list);
+   System.out.println("Avarege is: " + Avarege);
+  }
+
+
+  private static double getAvarege(ArrayList<Integer> array)
+  {
+    float sum = 0;
+      for (int i = 0; i < array.size();)
+      {
+        sum = sum + array.get(i);
+        i++;
+      }
+      
+      
+    double result = sum / array.size();
+    return result;
+
+
+  }
+}
